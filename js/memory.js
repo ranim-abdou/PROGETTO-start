@@ -105,13 +105,13 @@ function openModal(){
     if (iconsFind.length ==24){
         clearInterval(interval);
         modalita.classList.add("active");
-        document.getElementById("tempo").innerHTML =timer.innerHTML;
+        document.getElementById("tempoTrascorso").innerHTML =timer.innerHTML;
         closeModal();
     }
 }
 
 function closeModal(){
-    closeicon.addEventListener("click", function (ab){
+    closeicon.addEventListener("click", function (a){
         modalita.classList.remove("active");
         startGame();
     })
